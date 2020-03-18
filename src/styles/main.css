@@ -1,0 +1,409 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.the-island .col-left {
+  background-color: #2c3a2d;
+
+  text-align: right;
+}
+.the-island .col-left h2 {
+  font-size: 60px;
+  color: #b8a470;
+  font-family: "Gotham-Black";
+  line-height: 94px;
+  margin-bottom: 150px;
+  text-transform: uppercase;
+}
+
+.the-island .col-left .entry-content {
+  text-align: left;
+  display: inline-block;
+  padding-top: 220px;
+  padding-bottom: 138px;
+  padding-right: 15px;
+}
+
+@media (max-width: 991px) {
+  .taxonomy-content .left-content,
+  .taxonomy-content .middle-content,
+  .taxonomy-content .right-content {
+    width: 100%;
+  }
+  .home-slide .owl-item .background {
+    height: 70vh;
+  }
+  .taxonomy-content .middle-content iframe {
+    position: static;
+  }
+  .header {
+    position: static;
+    background: #fff;
+  }
+
+  .navbar,
+  .sticky-logo {
+    display: none;
+  }
+  .mobile-menu {
+    height: 72px;
+    background: #ffffff;
+    position: relative;
+    z-index: 99;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .mobile-menu .navbar-brand {
+    width: auto;
+    margin: auto !important;
+    padding-left: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation: pulse 2s infinite;
+}
+
+.home-slider {
+  position: relative;
+}
+.home-slide {
+  max-height: 100vh;
+  overflow: hidden;
+}
+.home-slider .down {
+  position: absolute;
+  left: 50%;
+  bottom: 37px;
+  cursor: pointer;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+@media (min-width: 1600px) {
+  .home-slide {
+    height: 100vh;
+  }
+  .home-slide picture img {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1336px) {
+  .header nav {
+    padding: 20px;
+  }
+
+  .header nav .navbar-brand {
+    width: 15% !important;
+  }
+
+  .header nav .navbar-brand {
+    padding-left: 0 !important;
+  }
+  .navbar-brand img {
+    max-width: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .the-island .col-left h2 br,
+  .the-island .col-right,
+  .vertical-bar,
+  .home-slider .down,
+  .sticky-logo,
+  .slide-desktop,
+  .unique_position .col-right h2,
+  .unique_position .show .button-desktop,
+  .title-desktop {
+    display: none;
+  }
+
+  .the-island .col-left h2 {
+    margin-bottom: 30px;
+  }
+  .the-island .col-left .desc {
+    margin-bottom: 50px;
+  }
+  .the-island .col-left .show {
+    display: block;
+    float: right;
+  }
+
+  .unique_position {
+    background: none !important;
+  }
+  .unique_position .col-right {
+    background: none;
+  }
+  .unique_position .col-right .desc {
+    padding-left: 0;
+  }
+  .unique_position .col-right .desc p {
+    color: #2c3a2d;
+  }
+  .unique_position .container-fluid {
+    padding: 0 !important;
+  }
+  .unique_position .col-left {
+    padding-top: 55px;
+    padding-bottom: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .unique_position .col-left h2 {
+    font-size: 36px;
+    text-align: right;
+    color: #f9f1d8;
+    font-family: "Gotham-Black";
+    line-height: 43px;
+    margin-right: 15px;
+    text-transform: uppercase;
+  }
+  .unique_position .col-left h2 span {
+    display: block;
+    font-family: "Gotham-Light";
+  }
+  .unique-masterpiece .slides {
+    padding: 0;
+  }
+  .unique-masterpiece .design-slide {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .unique_position .show {
+    float: right;
+    margin-top: 40px;
+  }
+  .unique_position {
+    margin-bottom: 65px;
+  }
+}
+
+/***********************************************
+  ** BEGIN the-island
+  ************************************************/
+.home-page h2 {
+  font-family: "Garamond-Bold";
+}
+.the-island .col-left {
+  background-color: #2c3a2d;
+
+  text-align: right;
+}
+.the-island .col-left h2 {
+  font-size: 60px;
+  color: #b8a470;
+  font-family: "Gotham-Black";
+  line-height: 94px;
+  margin-bottom: 150px;
+  text-transform: uppercase;
+}
+
+.the-island .col-left .entry-content {
+  text-align: left;
+  display: inline-block;
+  padding-top: 220px;
+  padding-bottom: 138px;
+  padding-right: 15px;
+}
+.the-island .col-right {
+  background-color: #fff;
+}
+.the-island .col-right .entry-content {
+  padding-top: 220px;
+  max-width: 67%;
+  padding-bottom: 138px;
+}
+.the-island .col-right h2 {
+  font-size: 70px;
+  color: #b8a470;
+  line-height: 94px;
+  font-family: "Gotham-Light";
+  padding-left: 15px;
+  margin-bottom: 44px;
+  text-transform: uppercase;
+}
+.the-island .col-right .desc {
+  font-size: 16px;
+  color: #2c3a2d;
+  line-height: 21px;
+  font-family: "Gotham-Book";
+  padding-left: 67px;
+  text-align: justify;
+}
+.the-island .col-right .desc p {
+  margin-bottom: 20px;
+}
+.unique_position {
+  background-size: cover;
+}
+.unique_position .show {
+  display: inline-block;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .the-island .col-right .entry-content {
+    max-width: 100%;
+  }
+  .the-island .col-right .desc {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .the-island .col-left h2 {
+    font-size: 70px;
+  }
+  .the-island .col-right h2 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .the-island .col-left h2 {
+    font-size: 60px;
+  }
+  .the-island .col-right h2 {
+    font-size: 50px;
+    line-height: initial;
+  }
+}
+@media screen and (max-width: 575px) {
+  .the-island .col-left {
+    text-align: left;
+  }
+  .the-island .col-left h2 {
+    line-height: initial;
+  }
+  .the-island .col-left .entry-content {
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+  .the-island .col-right .entry-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .the-island .col-left h2,
+  .the-island .col-right h2 {
+    font-size: 55px;
+    line-height: 75px;
+  }
+
+  .the-island .col-right .des {
+    padding-left: 58px;
+  }
+
+  .the-island .col-left a img {
+    max-width: 200px;
+  }
+  .the-island .col-left .entry-content,
+  .the-island .col-right .entry-content {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+/***********************************************
+  ** BEGIN unique_position
+  ************************************************/
+.unique_position {
+  margin-bottom: 85px;
+  background-repeat: no-repeat;
+}
+.unique_position .col-right {
+  background-color: rgba(44, 58, 45, 0.8);
+}
+.unique_position .col-right .entry-content {
+  padding: 118px 56px 260px 72px;
+}
+.unique_position .col-right h2 {
+  font-size: 60px;
+  color: #f9f1d8;
+  line-height: 98px;
+  text-transform: uppercase;
+  font-family: "Gotham-Black";
+  color: #b8a470;
+  margin-bottom: 50px;
+}
+.unique_position .col-right h2 span {
+  font-family: "Gotham-Light";
+  display: block;
+}
+.unique_position .col-right .desc {
+  padding-left: 70px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 19px;
+  font-family: "Gotham-Book";
+  text-align: justify;
+  margin-bottom: 115px;
+}
+.unique_position .col-right .desc p {
+  margin-bottom: 19px;
+  color: #fff;
+}
+@media screen and (max-width: 1799px) {
+  .unique_position .col-right .entry-content {
+    padding: 60px 56px 70px 30px;
+  }
+  .unique_position .col-right h2 {
+    font-size: 50px;
+    line-height: initial;
+    max-width: none;
+  }
+  .unique_position .col-right .desc {
+    margin-bottom: 70px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .unique_position .col-right .entry-content {
+    padding: 50px 30px 60px 30px;
+  }
+  .unique_position .col-right h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .the-island .col-left .desc,
+  .the-island .col-left h2 span,
+  .unique_position .col-left,
+  .slide-mobile,
+  .unique_position .show .button-mobile,
+  .title-mobile {
+    display: none;
+  }
+  .hidden-desktop {
+    display: none;
+  }
+}

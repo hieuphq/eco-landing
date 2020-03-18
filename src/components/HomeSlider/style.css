@@ -1,0 +1,13 @@
+.home-slider {
+  position: relative;
+}
+.home-slide {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
