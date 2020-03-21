@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
+import Header from './header'
 
 interface Props {
   location?: Location
@@ -32,7 +33,7 @@ const Layout = ({ location, children }: Props) => {
   const title = `${site.siteMetadata.title} © ${new Date().getFullYear()}`
   return (
     <div className="wrap-main">
-      <header />
+      <Header />
       <main>{children}</main>
       <Footer
         hotline={site.siteMetadata.office.phone}

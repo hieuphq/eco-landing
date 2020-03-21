@@ -30,6 +30,7 @@ import React from 'react'
 import './style.css'
 import { useStaticQuery, graphql } from 'gatsby'
 import Carousel from 'nuka-carousel'
+import Image from 'gatsby-image'
 
 const HomeSlider = () => {
   const { webBanner, mobileBanner } = useStaticQuery(graphql`

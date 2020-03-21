@@ -1,22 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/style.css'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-
-export default () => (
-  <Layout location={window.location}>
-    <SEO title="Trang chủ" />
-    <div className="md:flex bg-white rounded-lg p-6">
-      <img
-        className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
-        src="https://randomuser.me/api/portraits/women/17.jpg"
-      />
-      <div className="text-center md:text-left">
-        <h2 className="text-lg">Erin Lindford</h2>
-        <div className="text-purple-500">Customer Support</div>
-        <div className="text-gray-600">erinlindford@example.com</div>
-        <div className="text-gray-600">(555) 765-4321</div>
+import HomeSlider from '../components/HomeSlider'
+import Island from '../components/Island'
+import UniquePosition from '../components/UniquePosition'
+import UniqueDesign from '../components/UniqueDesign'
+import PersonalImprint from '../components/PersonalImprint'
+import UpperClassPrivilege from '../components/UpperClassPrivilege'
+import Video from '../components/Video'
+import Partner from '../components/Partner'
+import ContactBtn from '../components/ContactBtn'
+import ContactForm from '../components/ContactForm'
+export default () => {
+  const [willShow, setWillShow] = useState(false)
+  return (
+    <Layout>
+      <SEO title="Trang chủ" />
+      <HomeSlider />
+      <Island />
+      <UniquePosition />
+      <UniqueDesign />
+      <PersonalImprint />
+      <UpperClassPrivilege />
+      <Video videoSrcURL="https://ecoparkgrand.com/wp-content/uploads/2019/05/videos.mp4" />
+      <Partner />
+      <div className="p-10 text-center">
+        <ContactBtn
+          className="sm:py-5 sm:px-20"
+          title="Chi tiết"
+          onClick={() => {
+            setWillShow(true)
+          }}
+        />
       </div>
-    </div>
-  </Layout>
-)
+      <ContactForm
+        willShow={willShow}
+        onClose={() => {
+          console.log('HELP me')
+          setWillShow(false)
+        }}
+      />
+    </Layout>
+  )
+}

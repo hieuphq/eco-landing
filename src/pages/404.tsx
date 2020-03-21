@@ -4,7 +4,7 @@ import SEO from '../components/seo'
 
 function NotFoundPage() {
   return (
-    <Layout location={window.location}>
+    <Layout>
       <SEO title="404: Not found" />
       <div className="h-screen w-screen bg-green-600 flex justify-center content-center flex-wrap">
         <p className="font-sans text-white error-text">404</p>
