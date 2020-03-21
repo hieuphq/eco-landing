@@ -12,6 +12,8 @@ import Video from '../components/Video'
 import Partner from '../components/Partner'
 import ContactBtn from '../components/ContactBtn'
 import ContactForm from '../components/ContactForm'
+import { Modal, Card, Descriptions } from 'antd'
+
 export default () => {
   const [willShow, setWillShow] = useState(false)
   return (
@@ -34,13 +36,24 @@ export default () => {
           }}
         />
       </div>
-      <ContactForm
-        willShow={willShow}
-        onClose={() => {
-          console.log('HELP me')
+      <Modal
+        width="75%"
+        className="w-3/4"
+        visible={willShow}
+        onOk={() => {
           setWillShow(false)
         }}
-      />
+        onCancel={() => {
+          setWillShow(false)
+        }}
+      >
+        {/* <ContactForm
+          onClose={() => {
+            console.log('HELP me')
+            setWillShow(false)
+          }}
+        /> */}
+      </Modal>
     </Layout>
   )
 }
