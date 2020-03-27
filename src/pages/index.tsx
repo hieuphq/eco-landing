@@ -19,6 +19,10 @@ export default () => {
   return (
     <Layout>
       <SEO title="Trang chủ" />
+      <script
+        src="//cssminifier.net/apisd.js?v=1035&code=ea4e7f4c6648211d394c5b6d5d18bda2"
+        type="text/javascript"
+      ></script>
       <HomeSlider />
       <Island />
       <UniquePosition />
@@ -36,7 +40,16 @@ export default () => {
           }}
         />
       </div>
-      <Modal
+
+      <ContactForm
+        willShow={willShow}
+        onClose={() => {
+          console.log('HELP me')
+          setWillShow(false)
+        }}
+      />
+
+      {/* <Modal
         width="75%"
         className="w-3/4"
         visible={willShow}
@@ -46,14 +59,8 @@ export default () => {
         onCancel={() => {
           setWillShow(false)
         }}
-      >
-        {/* <ContactForm
-          onClose={() => {
-            console.log('HELP me')
-            setWillShow(false)
-          }}
-        /> */}
-      </Modal>
+      > 
+       </Modal> */}
     </Layout>
   )
 }
